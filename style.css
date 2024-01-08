@@ -1,0 +1,155 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #ffcccb;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #ffcccb;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Estilos para las secciones */
+.S1, .S2 {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.S1:hover, .S2:hover {
+    background-color: #e0e0e0;
+}
+
+.S1 section, .S2 section {
+    transition: color 0.3s ease;
+}
+
+.S1:hover section, .S2:hover section {
+    color: #ff6666; /* Cambia el color del texto al hacer hover */
+}
+
+/* Botones de las secciones */
+.S1 button, .S2 button {
+    background-color: #ff6666;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.S1 button:hover, .S2 button:hover {
+    background-color: #ff4d4d;
+    transform: scale(1.05); /* Hace un pequeño zoom al hacer hover */
+}
+/* Estilos para el modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.modal-content:hover {
+    background-color: #f9f9f9;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.close:hover,
+.close:focus {
+    color: #333;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Agrega estilos para botones dentro del modal */
+.modal-content button {
+    background-color: #ff6666;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-right: 10px;
+}
+
+.modal-content button:hover {
+    background-color: #ff4d4d;
+    transform: scale(1.05);
+}
+
+/* Agrega estilos para el contenido del modal */
+#contenido-modal {
+    margin: 2px;
+    color: #333;
+}
+
+#contenido-modal p {
+    margin: 15px;
+}
+
+#contenido-modal button {
+    background-color: #ff6666;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-right: 10px;
+}
+
+#contenido-modal button:hover {
+    background-color: #ff4d4d;
+    transform: scale(1.05);
+}

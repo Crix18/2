@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pag4Pau</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Hola Pauu </h1>
+        <p>Descubre momentos especiales y datos interesantes</p>
+    </header>
+
+    <main>
+        <!-- Sección 1 -->
+        <div class="S1">
+            <section>
+                <h2>¡Hola Paulette!</h2>
+                <p>Me aburrí y bue, esta página es para ti bsjaksj.</p>
+                <p>¡Hope u like it!</p>
+                
+                <!-- Botón en la Sección 1 -->
+                <button onclick="mostrarModal('mensaje')">Haz clic para un mensaje especial</button>
+            </section>
+        </div>
+
+        <!-- Sección 2 -->
+        <div class="S2">
+            <section>
+                <h2>Curiosidades Random</h2>
+                <p>Aquí encontrarás datos random sobre diferentes temas.</p>
+                <!-- Puedes agregar aquí tus datos random -->
+
+                <!-- Botón en la Sección 2 -->
+                <button onclick="mostrarModal('categorias')">Haz clic para elegir una categoría</button>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2024 Crix</p>
+    </footer>
+
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="cerrarModal()">&times;</span>
+            <div id="contenido-modal"></div>
+        </div>
+    </div>
+
+    <!-- Script JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
